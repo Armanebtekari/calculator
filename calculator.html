@@ -1,48 +1,203 @@
 <html>
-        <head>
-            <meta charset="UTF-8">
-                <meta http-equiv="X-UA-Compatible" content="IE=edge">
-                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                     <title>calculator</title>
-                  <link rel="stylesheet" href="calculator.css">
-               <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
-         </head>
-   <body>
-    <form name="calculator" class="form">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calculator</title>
+    <link rel="stylesheet" href="calculator.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <form name="calculator" class="form">
         <table>
-           <tr>
-              <td colspan="4">
-                 <input type="text" class="input" name="display" id="display" disabled>
+          <tr>
+            <td>
+              <input
+                type="text"
+                class="input"
+                name="display"
+                id="display"
+                disabled
+              />
+            </td>
+          </tr>
+          <div class="button">
+            <tr>
+              <td>
+                <button
+                  type="button"
+                  class="button1"
+                  value="1"
+                  onclick="numberButton('1')"
+                >
+                  1
+                </button>
               </td>
-           </tr>
-        <div class="button">
-           <tr>
-               <td><button type="button" class="button1" value="1" onclick="onefunction()">1</button></td>
-               <td><button type="button" class="button2" value="2" onclick="twofunction()">2</button></td>
-               <td><button type="button" class="button3" value="3" onclick="threefunction()">3</button></td>
-            <td><button type="button" class="button4" value="/" onclick="fourfunction()">÷</button></td>
-           </tr>
-           <tr>
-               <td><button type="button" class="button5" value="4" onclick="fivefunction()">4</button></td>
-               <td><button type="button" class="button6" value="5" onclick="sixfunction()">5</button></td>
-               <td><button type="button" class="button7" value="6" onclick="sevenfunction()">6</button></td>
-            <td><button type="button" class="button8" value="*" onclick="eightfunction()">×</button></td>
-           </tr>
-           <tr>
-               <td><button type="button" class="button9" value="7" onclick="ninefunction()">7</button></td>
-               <td><button type="button" class="button10" value="8" onclick="thenfunction()">8</button></td>
-               <td><button type="button" class="button11" value="9" onclick="elevenfunction()">9</button></td>
-            <td><button type="button" class="button12" value="+" onclick="twoelvefunctio()">+</button></td>
-           </tr>
-           <tr>
-            <td><button type="button" class="button14" value="c" onclick="calculator.display.value = ''">C</button></td>
-            <td><button type="button" class="button16" value="0" onclick="Thirteenfunction()">0</button></td>
-            <td><button type="button" class="button13" value="=" onclick="calculator.display.value = eval(calculator.display.value)">=</button></td>
-            <td><button type="button" class="button15" value="-" onclick="fourteenfunction()">-</button></td>
-           </tr>
-        </div>
+              <td>
+                <button
+                  type="button"
+                  class="button2"
+                  value="2"
+                  onclick="numberButton('2')"
+                >
+                  2
+                </button>
+              </td>
+              <td>
+                <button
+                  type="button"
+                  class="button3"
+                  value="3"
+                  onclick="numberButton('3')"
+                >
+                  3
+                </button>
+              </td>
+              <td>
+                <button
+                  type="button"
+                  class="button4"
+                  value="/"
+                  onclick="operationButton('/')"
+                >
+                  ÷
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <button
+                  type="button"
+                  class="button5"
+                  value="4"
+                  onclick="numberButton('4')"
+                >
+                  4
+                </button>
+              </td>
+              <td>
+                <button
+                  type="button"
+                  class="button6"
+                  value="5"
+                  onclick="numberButton('5')"
+                >
+                  5
+                </button>
+              </td>
+              <td>
+                <button
+                  type="button"
+                  class="button7"
+                  value="6"
+                  onclick="numberButton('6')"
+                >
+                  6
+                </button>
+              </td>
+              <td>
+                <button
+                  type="button"
+                  class="button8"
+                  value="*"
+                  onclick="operationButton('*')"
+                >
+                  ×
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <button
+                  type="button"
+                  class="button9"
+                  value="7"
+                  onclick="numberButton('7')"
+                >
+                  7
+                </button>
+              </td>
+              <td>
+                <button
+                  type="button"
+                  class="button10"
+                  value="8"
+                  onclick="numberButton('8')"
+                >
+                  8
+                </button>
+              </td>
+              <td>
+                <button
+                  type="button"
+                  class="button11"
+                  value="9"
+                  onclick="numberButton('9')"
+                >
+                  9
+                </button>
+              </td>
+              <td>
+                <button
+                  type="button"
+                  class="button12"
+                  value="+"
+                  onclick="operationButton('+')"
+                >
+                  +
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <button
+                  type="button"
+                  class="button14"
+                  value="c"
+                  onclick="clearDisplay()"
+                >
+                  C
+                </button>
+              </td>
+              <td>
+                <button
+                  type="button"
+                  class="button16"
+                  value="0"
+                  onclick="numberButton('0')"
+                >
+                  0
+                </button>
+              </td>
+              <td>
+                <button
+                  type="button"
+                  class="button13"
+                  value="="
+                  onclick="calculateResult()"
+                >
+                  =
+                </button>
+              </td>
+              <td>
+                <button
+                  type="button"
+                  class="button15"
+                  value="-"
+                  onclick="operationButton('-')"
+                >
+                  -
+                </button>
+              </td>
+            </tr>
+          </div>
         </table>
-     </form>
-   </body>
-   <script src="calculator.js"></script>
+      </form>
+    </div>
+  </body>
+  <script src="calculator.js"></script>
 </html>

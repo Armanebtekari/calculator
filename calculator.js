@@ -1,55 +1,52 @@
-function onefunction() {
-    calculator.display.value += '1';
+// Function to update the display value
+function updateDisplay(value) {
+  calculator.display.value += value;
 }
 
-function twofunction() {
-    calculator.display.value += '2';
+// Function to clear the display without saving to localStorage
+function clearDisplayWithoutSaving() {
+  calculator.display.value = "";
 }
 
-function threefunction() {
-    calculator.display.value += '3';
+// Function to save the entire calculator state to localStorage
+function saveCalculatorState() {
+  var calculatorState = {
+    displayValue: calculator.display.value,
+  };
+  localStorage.setItem("calculatorState", JSON.stringify(calculatorState));
 }
 
-function fourfunction() {
-    calculator.display.value += '/';
+// Function to load the calculator state from localStorage
+function loadCalculatorState() {
+  var storedState = localStorage.getItem("calculatorState");
+  if (storedState) {
+    var calculatorState = JSON.parse(storedState);
+    calculator.display.value = calculatorState.displayValue;
+  }
 }
 
-function fivefunction() {
-    calculator.display.value += '4';
+// Function to perform the calculation when the equals button is clicked
+function calculateResult() {
+  calculator.display.value = eval(calculator.display.value);
+  saveCalculatorState();
 }
 
-function sixfunction() {
-    calculator.display.value += '5';
+// Function to handle the clear button and save the state to localStorage
+function clearDisplay() {
+  clearDisplayWithoutSaving();
+  // Save the state after clearing
+  saveCalculatorState();
 }
 
-function sevenfunction() {
-    calculator.display.value += '6';
+// Functions for number buttons
+function numberButton(value) {
+  updateDisplay(value);
 }
 
-function eightfunction() {
-    calculator.display.value += '*';
+// Functions for operation buttons
+function operationButton(value) {
+  updateDisplay(value);
 }
 
-function ninefunction() {
-    calculator.display.value += '7';
-}
-
-function thenfunction() {
-    calculator.display.value += '8';
-}
-
-function elevenfunction() {
-    calculator.display.value += '9';
-}
-
-function twoelvefunctio() {
-    calculator.display.value += '+';
-}
-
-function Thirteenfunction() {
-    calculator.display.value += '0';
-}
-
-function fourteenfunction() {
-    calculator.display.value += '-';
-}
+// Call the load function when the page loads
+window.onload = loadCalculatorState;

@@ -1,304 +1,315 @@
-html,body {
-    background-color: rgb(48, 47, 47);
-    font-family: 'Poppins', sans-serif;
-    left: 0;
+html,
+body {
+  background-color: rgb(34, 34, 34);
+  font-family: "Poppins", sans-serif;
+  left: 0;
+}
+
+button:hover {
+  background: rgb(114, 114, 114);
+  transition: 0.3s ease-in-out;
+  border: 0.5px solid rgb(48, 47, 47);
 }
 
 .form {
-    position: absolute;
-    width: 362px;
-    height: 416px;
-    left: 519px;
-    top: 125px;
-    background: linear-gradient(243.45deg, rgba(255, 255, 255, 0.65) -44.77%, rgba(255, 255, 255, 0) 106.16%);
-    backdrop-filter: blur(800px);
-    border-radius: 20px;
+  position: absolute;
+  width: 362px;
+  height: 416px;
+  left: 39%;
+  top: 22%;
+  background: linear-gradient(
+    243.45deg,
+    rgba(255, 255, 255, 0.65) -44.77%,
+    rgba(255, 255, 255, 0) 106.16%
+  );
+  border: 1px solid black;
+  backdrop-filter: blur(800px);
+  border-radius: 20px;
 }
 
 .input {
-    position: absolute;
-    width: 330px;
-    height: 88px;
-    left: 17px;
-    top: 15px;
-    background: rgba(217, 217, 217, 0.56);
-    border-radius: 15px;
-    border: 12px solid rgba(173, 173, 173, 0);
-    font-size: 26px;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
+  position: absolute;
+  width: 330px;
+  height: 88px;
+  left: 17px;
+  top: 15px;
+  background: rgba(217, 217, 217, 0.56);
+  border-radius: 15px;
+  border: 12px solid rgba(173, 173, 173, 0);
+  font-size: 26px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
 }
 
 .button1 {
-    position: absolute;
-    width: 77px;
-    height: 62px;
-    left: 15px;
-    top: 266px;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 40px;
-    line-height: 93.75%;
-    color: #FFFFFF;
-    background: #B4B4B4;
-    border-radius: 7px;
-    border: none;
+  position: absolute;
+  width: 77px;
+  height: 62px;
+  left: 15px;
+  top: 266px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 93.75%;
+  color: #ffffff;
+  background: #b4b4b4;
+  border-radius: 7px;
+  border: none;
 }
 
 .button2 {
-    position: absolute;
-    width: 77px;
-    height: 62px;
-    left: 100px;
-    top: 266px;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 40px;
-    line-height: 93.75%;
-    color: #FFFFFF;
-    background: #B4B4B4;
-    border-radius: 7px;
-    border: none;
+  position: absolute;
+  width: 77px;
+  height: 62px;
+  left: 100px;
+  top: 266px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 93.75%;
+  color: #ffffff;
+  background: #b4b4b4;
+  border-radius: 7px;
+  border: none;
 }
 
 .button3 {
-    position: absolute;
-    width: 77px;
-    height: 62px;
-    left: 185px;
-    top: 266px;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 40px;
-    line-height: 93.75%;
-    color: #FFFFFF;
-    background: #B4B4B4;
-    border-radius: 7px;
-    border: none;
+  position: absolute;
+  width: 77px;
+  height: 62px;
+  left: 185px;
+  top: 266px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 93.75%;
+  color: #ffffff;
+  background: #b4b4b4;
+  border-radius: 7px;
+  border: none;
 }
 
-
 .button4 {
-    position: absolute;
-    width: 77px;
-    height: 62px;
-    left: 270px;
-    top: 195px;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 40px;
-    line-height: 93.75%;
-    color: #FFFFFF;
-    background: #B4B4B4;
-    border-radius: 7px;
-    border: none;
+  position: absolute;
+  width: 77px;
+  height: 62px;
+  left: 270px;
+  top: 195px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 93.75%;
+  color: #ffffff;
+  background: #b4b4b4;
+  border-radius: 7px;
+  border: none;
 }
 
 .button5 {
-    position: absolute;
-    width: 77px;
-    height: 62px;
-    left: 15px;
-    top: 195px;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 40px;
-    line-height: 93.75%;
-    color: #FFFFFF;
-    background: #B4B4B4;
-    border-radius: 7px;
-    border: none;
+  position: absolute;
+  width: 77px;
+  height: 62px;
+  left: 15px;
+  top: 195px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 93.75%;
+  color: #ffffff;
+  background: #b4b4b4;
+  border-radius: 7px;
+  border: none;
 }
 
 .button6 {
-    position: absolute;
-    width: 77px;
-    height: 62px;
-    left: 100px;
-    top: 195px;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 40px;
-    line-height: 93.75%;
-    color: #FFFFFF;
-    background: #B4B4B4;
-    border-radius: 7px;
-    border: none;
+  position: absolute;
+  width: 77px;
+  height: 62px;
+  left: 100px;
+  top: 195px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 93.75%;
+  color: #ffffff;
+  background: #b4b4b4;
+  border-radius: 7px;
+  border: none;
 }
 
 .button7 {
-    position: absolute;
-    width: 77px;
-    height: 62px;
-    left: 185px;
-    top: 195px;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 40px;
-    line-height: 93.75%;
-    color: #FFFFFF;
-    background: #B4B4B4;
-    border-radius: 7px;
-    border: none;
+  position: absolute;
+  width: 77px;
+  height: 62px;
+  left: 185px;
+  top: 195px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 93.75%;
+  color: #ffffff;
+  background: #b4b4b4;
+  border-radius: 7px;
+  border: none;
 }
 
 .button8 {
-    position: absolute;
-    width: 77px;
-    height: 62px;
-    left: 270px;
-    top: 125px;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 40px;
-    line-height: 93.75%;
-    color: #FFFFFF;
-    background: #B4B4B4;
-    border-radius: 7px;
-    border: none;
+  position: absolute;
+  width: 77px;
+  height: 62px;
+  left: 270px;
+  top: 125px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 93.75%;
+  color: #ffffff;
+  background: #b4b4b4;
+  border-radius: 7px;
+  border: none;
 }
 
 .button16 {
-    position: absolute;
-    width: 77px;
-    height: 62px;
-    left: 100px;
-    top: 336px;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 40px;
-    line-height: 93.75%;
-    color: #FFFFFF;
-    background: #B4B4B4;
-    border-radius: 7px;
-    border: none;
+  position: absolute;
+  width: 77px;
+  height: 62px;
+  left: 100px;
+  top: 336px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 93.75%;
+  color: #ffffff;
+  background: #b4b4b4;
+  border-radius: 7px;
+  border: none;
 }
 
 .button9 {
-    position: absolute;
-    width: 77px;
-    height: 62px;
-    left: 15px;
-    top: 124px;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 40px;
-    line-height: 93.75%;
-    color: #FFFFFF;
-    background: #B4B4B4;
-    border-radius: 7px;
-    border: none;
+  position: absolute;
+  width: 77px;
+  height: 62px;
+  left: 15px;
+  top: 124px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 93.75%;
+  color: #ffffff;
+  background: #b4b4b4;
+  border-radius: 7px;
+  border: none;
 }
 
 .button10 {
-    position: absolute;
-    width: 77px;
-    height: 62px;
-    left: 100px;
-    top: 124px;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 40px;
-    line-height: 93.75%;
-    color: #FFFFFF;
-    background: #B4B4B4;
-    border-radius: 7px;
-    border: none;
+  position: absolute;
+  width: 77px;
+  height: 62px;
+  left: 100px;
+  top: 124px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 93.75%;
+  color: #ffffff;
+  background: #b4b4b4;
+  border-radius: 7px;
+  border: none;
 }
 
 .button11 {
-    position: absolute;
-    width: 77px;
-    height: 62px;
-    left: 185px;
-    top: 124px;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 40px;
-    line-height: 93.75%;
-    color: #FFFFFF;
-    background: #B4B4B4;
-    border-radius: 7px;
-    border: none;
+  position: absolute;
+  width: 77px;
+  height: 62px;
+  left: 185px;
+  top: 124px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 93.75%;
+  color: #ffffff;
+  background: #b4b4b4;
+  border-radius: 7px;
+  border: none;
 }
 
 .button12 {
-    position: absolute;
-    width: 77px;
-    height: 62px;
-    left: 270px;
-    top: 336px;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 40px;
-    line-height: 93.75%;
-    color: #FFFFFF;
-    background: #B4B4B4;
-    border-radius: 7px;
-    border: none;
+  position: absolute;
+  width: 77px;
+  height: 62px;
+  left: 270px;
+  top: 336px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 93.75%;
+  color: #ffffff;
+  background: #b4b4b4;
+  border-radius: 7px;
+  border: none;
 }
 
 .button13 {
-    position: absolute;
-    width: 77px;
-    height: 62px;
-    left: 185px;
-    top: 336px;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 40px;
-    line-height: 93.75%;
-    color: #FFFFFF;
-    background: #B4B4B4;
-    border-radius: 7px;
-    border: none;
+  position: absolute;
+  width: 77px;
+  height: 62px;
+  left: 185px;
+  top: 336px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 93.75%;
+  color: #ffffff;
+  background: #b4b4b4;
+  border-radius: 7px;
+  border: none;
 }
 
 .button14 {
-    position: absolute;
-    width: 77px;
-    height: 62px;
-    left: 15px;
-    top: 336px;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 40px;
-    line-height: 93.75%;
-    color: #FFFFFF;
-    background: #B4B4B4;
-    border-radius: 7px;
-    border: none;
+  position: absolute;
+  width: 77px;
+  height: 62px;
+  left: 15px;
+  top: 336px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 93.75%;
+  color: #ffffff;
+  background: #b4b4b4;
+  border-radius: 7px;
+  border: none;
 }
 
 .button15 {
-    position: absolute;
-    width: 77px;
-    height: 62px;
-    left: 270px;
-    top: 266px;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 40px;
-    line-height: 93.75%;
-    color: #FFFFFF;
-    border: none;
-    background: #B4B4B4;
-    border-radius: 7px;
+  position: absolute;
+  width: 77px;
+  height: 62px;
+  left: 270px;
+  top: 266px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 93.75%;
+  color: #ffffff;
+  border: none;
+  background: #b4b4b4;
+  border-radius: 7px;
 }
